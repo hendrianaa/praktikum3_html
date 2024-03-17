@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Selector</title>
+  <style>
+    /* document's root element */
+    :root{
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --success-color: #28a745;
+      --danger-color: #dc3545;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+      --light-color: #f8f9fa;
+      --dark-color: #343a40;
+      background: #f2f4f7;
+    }
+
+    .heading-pertama{
+      color: var(--primary-color);
+    }
+
+    /* Insert something after the content */
+    /* Modifikasi: Menggunakan inline styling untuk menambahkan teks setelah kelas */
+    .after-class{
+      color: var(--success-color);
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Insert something before the content */
+    /* Modifikasi: Menggunakan inline styling untuk menambahkan teks sebelum kelas */
+    .before-class{
+      color: var(--danger-color);
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Modifikasi: Menggunakan inline styling untuk link yang aktif saat di klik */
+    a{
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    /* Modifikasi: Menggunakan inline styling untuk link yang aktif saat di klik */
+    a:active{
+      color: var(--warning-color);
+    }
+
+    /* Modifikasi: Menggunakan inline styling untuk teks placeholder di input */
+    input[type="text"]::placeholder{
+      color: var(--danger-color);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="heading-pertama">Tugas Selector HTML</h1>
+  <p class="after-class" style="content: ' - After Class';">Selector</p>
+  <p class="before-class" style="content: ' - Before Class';"> Selector</p>
+
+  <a style="display: block; margin-bottom: 1rem;" href="https://www.google.com">Google</a>
+  <input type="text" style="color: var(--danger-color);" placeholder="Input Text" name="input-text">
+</body>
+</html>
