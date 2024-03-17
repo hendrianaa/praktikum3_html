@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Background</title>
+
+  <style>
+    /* CSS untuk memberikan gaya pada elemen */
+    .py-5{
+      padding-top: 5rem; /* Padding atas sebesar 5 rem */
+      padding-bottom: 5rem; /* Padding bawah sebesar 5 rem */
+    }
+    .container{
+      width: 100%; /* Lebar kontainer 100% */
+      padding-right: 15px; /* Padding kanan sebesar 15 piksel */
+      padding-left: 15px; /* Padding kiri sebesar 15 piksel */
+      margin-right: auto; /* Margin kanan otomatis */
+      margin-left: auto; /* Margin kiri otomatis */
+    }
+
+    .mb-3{
+      margin-bottom: 1rem; /* Margin bawah sebesar 1 rem */
+    }
+
+    .background-warna{
+      background-color: #e0e0e0; /* Warna latar belakang abu-abu */
+    }
+
+    .background-gambar{
+      background-image: url('../assets/strawberries.jpg'); /* Gambar latar belakang */
+      background-size: cover; /* Ukuran gambar latar belakang menutupi seluruh area */
+      background-position: center; /* Posisi gambar latar belakang di tengah */
+      background-attachment: fixed; /* Gambar latar belakang tetap saat scrolling */
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); /* Efek bayangan untuk membuat overlay */
+    }
+
+    .background-campuran{
+      width: 100%; /* Lebar kontainer 100% */
+      height: 500px; /* Tinggi kontainer 500 piksel */
+      background: url('../assets/strawberries.jpg') bottom right / 700px 400px no-repeat scroll padding-box content-box red; /* Campuran latar belakang gambar dan warna */
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); /* Efek bayangan untuk membuat overlay */
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <!-- Bagian pertama: Background Warna -->
+  <section class="py-5 background-warna mb-3"> <!-- Kelas CSS untuk memberikan padding atas dan bawah, serta warna latar belakang abu-abu -->
+    <div class="container"> <!-- Kontainer untuk mengelompokkan konten dan membuatnya terpusat -->
+      <h1>Background Warna</h1> <!-- Judul bagian -->
+    </div>
+  </section>
+
+  <!-- Bagian kedua: Background Gambar -->
+  <section class="py-5 background-gambar mb-3"> <!-- Kelas CSS untuk memberikan padding atas dan bawah, serta latar belakang gambar dengan efek overlay -->
+    <div class="container"> <!-- Kontainer untuk mengelompokkan konten dan membuatnya terpusat -->
+      <h1 style="color: #fff;">Background Gambar</h1> <!-- Judul bagian dengan teks berwarna putih -->
+    </div>
+  </section>
+
+  <!-- Bagian ketiga: Background Campuran -->
+  <section class="py-5 background-campuran mb-3"> <!-- Kelas CSS untuk memberikan padding atas dan bawah, serta latar belakang campuran gambar dan warna dengan efek overlay -->
+    <div class="container"> <!-- Kontainer untuk mengelompokkan konten dan membuatnya terpusat -->
+      <h1 style="color: #fff;">Background Campuran</h1> <!-- Judul bagian dengan teks berwarna putih -->
+    </div>
+  </section>
+</body>
+</html>
